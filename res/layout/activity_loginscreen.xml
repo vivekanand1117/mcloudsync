@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/potrait_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/LoginScreen_TextViewMCloudSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="mCloudSync"
+        android:textColor="#006400"
+        android:textSize="17pt" />    
+
+    <Button
+        android:id="@+id/LoginScreen_ButtonForgotPassword"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toLeftOf="@+id/LoginScreen_ButtonNewUser"
+        android:background="@drawable/recipient_name_bg"
+        android:text="Forgor Password"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginScreen_ButtonNewUser"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LoginScreen_ButtonForgotPassword"
+        android:layout_alignBottom="@+id/LoginScreen_ButtonForgotPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/recipient_name_bg"
+        android:text="SignUp for New User"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginScreen_ButtonLogin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginScreen_ButtonForgotPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toLeftOf="@+id/LoginScreen_ButtonCancel"
+        android:background="@drawable/recipient_name_bg"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginScreen_ButtonCancel"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginScreen_ButtonNewUser"
+        android:layout_alignLeft="@+id/LoginScreen_ButtonNewUser"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/recipient_name_bg"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/LoginScreen_EditTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginScreen_ButtonCancel"
+        android:layout_alignLeft="@+id/LoginScreen_EditTextEmail"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/alert_input_bg"
+        android:hint="Enter Password."
+        android:paddingLeft="5dip"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/LoginScreen_TextViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LoginScreen_EditTextPassword"
+        android:layout_alignBottom="@+id/LoginScreen_EditTextPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:text="Password "
+        android:textColor="@android:color/black"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/LoginScreen_TextViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginScreen_EditTextPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="3dp"
+        android:text="Email ID "
+        android:textColor="@android:color/black"
+        android:textSize="9pt" />
+
+    <EditText
+        android:id="@+id/LoginScreen_EditTextEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LoginScreen_TextViewEmail"
+        android:layout_alignBottom="@+id/LoginScreen_TextViewEmail"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/LoginScreen_TextViewPassword"
+        android:background="@drawable/alert_input_bg"
+        android:hint="Enter Email Id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dip" >
+
+        <requestFocus />
+    </EditText>    
+</RelativeLayout>

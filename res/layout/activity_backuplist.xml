@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/BackUpList_ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/potrait_bg"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BackUpList_TextViewMCloudSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mCloudSync"
+            android:layout_marginLeft="75dp"
+            android:textColor="#006400"
+            android:textSize="12pt" />
+
+        <CheckBox
+            android:id="@+id/BackUpList_CheckboxContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact" />
+
+        <CheckBox
+            android:id="@+id/BackUpList_CheckboxSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS" />
+
+        <CheckBox
+            android:id="@+id/BackUpList_CheckboxPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos" />
+
+        <CheckBox
+            android:id="@+id/BackUpList_Checkbox_Textfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextFiles" />
+
+        <Button
+            android:id="@+id/BackUpList_ButtonOK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recipient_name_bg"
+              android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/BackUpList_ButtonCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recipient_name_bg"
+              android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</ScrollView>

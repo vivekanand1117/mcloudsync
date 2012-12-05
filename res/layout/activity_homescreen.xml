@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HomeScreen_ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/potrait_bg"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/HomeScreen_TextViewMCloudSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:gravity="center_vertical"
+            android:text="mCloudSync"
+            android:textColor="#006400"
+            android:paddingBottom="3dp"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/HomeScreen_ButtonStartSync"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recipient_name_bg"
+              android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="Start Sync" />       
+
+        <Button
+            android:id="@+id/HomeScreen_ButtonRestore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recipient_name_bg"
+              android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+              android:layout_marginBottom="3dp"
+            android:text="Restore" />
+
+        <Button
+            android:id="@+id/HomeScreen_ButtonLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recipient_name_bg"
+              android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Logout" />
+    </LinearLayout>
+</ScrollView>

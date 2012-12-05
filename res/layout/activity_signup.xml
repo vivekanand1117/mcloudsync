@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/potrait_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/SignUp_TextViewMCloudSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerHorizontal="true"
+        android:text="mCloudSync"
+        android:textColor="#006400"
+        android:textSize="10pt"
+    />
+    
+    <TextView
+        android:id="@+id/SignUp_TextViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/SignUp_TextViewMCloudSync"
+        android:layout_marginTop="27dp"
+        android:text="SignUp"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"               
+        android:textSize="10pt" />
+    
+    <EditText
+        android:id="@+id/SignUp_EditTextEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SignUp_TextViewMCloudSync"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/SignUp_TextViewSignUp"
+        android:layout_marginTop="42dp"
+        android:hint="Enter Email Id"
+        android:background="@drawable/alert_input_bg"
+        android:paddingLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:inputType="textEmailAddress" >        
+        <requestFocus />
+        </EditText>
+    
+    <TextView
+        android:id="@+id/SignUp_TextViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SignUp_EditTextEmail"
+        android:layout_alignBottom="@+id/SignUp_EditTextEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:text="Email ID"
+        android:textColor="@android:color/black"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/SignUp_ButtonCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/recipient_name_bg"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="3dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/SignUp_ButtonEnter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SignUp_ButtonCancel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/recipient_name_bg"
+        android:text="Enter"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="3dp"
+        android:textStyle="bold" />    
+
+</RelativeLayout>
